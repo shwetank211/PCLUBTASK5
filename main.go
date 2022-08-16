@@ -24,7 +24,7 @@ var resultd *mongo.DeleteResult
 var err error
 
 func homepage(m echo.Context) error {
-	return m.String(http.StatusOK, "Welcome to IITK!")
+	return m.String(http.StatusOK, "Welcome to IITK!\nADDITION OF A STUDENT ENTRY!\n         localhost:9084/add\nDELETION OF A STUDENT ENTRY!\n         localhost:/delete\nEDITING A STUDENT ENTRY!\n         localhost:9084/edit\nFINDING A STUDENT ENTRY!\n         localhost:9084/find")
 }
 func addition(m echo.Context) error {
 	n := m.FormValue("Name:")
